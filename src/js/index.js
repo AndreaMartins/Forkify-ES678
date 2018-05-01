@@ -91,7 +91,8 @@ const controlRecipe = async () => {
             state.recipe.calcServings();
 
             // Render recipe
-            //clearLoader();
+            clearLoader();
+            recipeView.renderRecipe(state.recipe);
             //recipeView.renderRecipe(
             //    state.recipe,
             //    state.likes.isLiked(id)
